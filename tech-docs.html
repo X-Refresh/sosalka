@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,29 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }
-    .container {
       text-align: center;
     }
+    .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
     h1 {
-      color: #000;
       font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .tech-specs {
+      list-style: none;
+      padding: 0;
+    }
+    .tech-specs li {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
     }
     a {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 2rem;
       text-decoration: none;
       color: white;
       background: #007bff;
@@ -40,7 +52,17 @@
 </head>
 <body>
   <div class="container">
-    <h1>Привет!</h1>
+    <h1>Техническая документация Maserati Quattroporte</h1>
+    <ul class="tech-specs">
+      <li><strong>Объем:</strong> 3.0 л</li>
+      <li><strong>Мощность:</strong> 275 л.с.</li>
+      <li><strong>Коробка:</strong> Автомат</li>
+      <li><strong>Тип двигателя:</strong> Дизельный</li>
+      <li><strong>Топливо:</strong> ДТ</li>
+      <li><strong>Привод:</strong> Задний</li>
+      <li><strong>Разгон:</strong> 6.4 с</li>
+      <li><strong>Расход:</strong> 6.2 л</li>
+    </ul>
     <a href="index.html">← Назад на главную</a>
   </div>
 </body>
