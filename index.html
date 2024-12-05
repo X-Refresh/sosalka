@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,11 @@
       color: white;
       background: url('quattroporte.jpg') no-repeat center center fixed;
       background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
     }
     .header {
       position: absolute;
@@ -18,14 +23,15 @@
       width: 100%;
       padding: 1rem 2rem;
       display: flex;
-      justify-content: flex-end;
-      background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
     }
     .tech-link {
       text-decoration: none;
       color: white;
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
       border: 2px solid white;
       border-radius: 5px;
       transition: background 0.3s, color 0.3s;
@@ -52,10 +58,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
-      height: 100vh;
+      align-items: center;
+      height: 100%;
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.6); /* Прозрачный слой */
     }
     .content h1 {
       font-size: 4rem;
@@ -63,11 +68,12 @@
     }
     .content h2 {
       font-size: 1.5rem;
-      margin: 0.5rem 0 1rem;
+      margin: 1rem 0;
     }
     .content ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     .content ul li {
       margin-bottom: 0.5rem;
@@ -76,10 +82,6 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <a href="tech-docs.html" class="tech-link">Техническая документация</a>
-    <div id="tooltip" class="tooltip">Техническая составляющая Maserati Quattroporte</div>
-  </div>
   <div class="content">
     <h1>Maserati Quattroporte</h1>
     <h2>Идеальное сочетание скорости, стиля и технологий</h2>
@@ -88,20 +90,22 @@
       <li>Роскошный дизайн</li>
       <li>Передовые технологии</li>
     </ul>
+    <!— Кнопка технической документации по центру —>
+    <a href="tech-docs.html" class="tech-link">Техническая документация</a>
+  </div>
+  <div class="header">
+    <div id="tooltip" class="tooltip">Техническая составляющая Maserati Quattroporte</div>
   </div>
   <script>
-    // Ссылка на кнопку (ссылку) и подсказку
     const link = document.querySelector('.tech-link');
     const tooltip = document.getElementById('tooltip');
 
-    // Показать подсказку при наведении курсора на ссылку
     link.addEventListener('mouseenter', () => {
-      tooltip.style.display = 'block'; // Показываем подсказку
+      tooltip.style.display = 'block';
     });
 
-    // Скрыть подсказку, когда курсор уходит с ссылки
     link.addEventListener('mouseleave', () => {
-      tooltip.style.display = 'none'; // Скрываем подсказку
+      tooltip.style.display = 'none';
     });
   </script>
 </body>
