@@ -1,2 +1,0 @@
-# sosalka
-Sait
