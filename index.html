@@ -1,73 +1,63 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maserati Quattroporte</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: url('quattroporte.jpg') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      text-align: center;
-    }
-    .content h1 {
-      font-size: 4rem;
-      margin: 0;
-    }
-    .content h2 {
-      font-size: 1.5rem;
-      margin: 1rem 0;
-    }
-    .content ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .content ul li {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-    }
-    .tech-link {
-      text-decoration: none;
-      color: white;
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-      border: 2px solid white;
-      border-radius: 5px;
-      transition: background 0.3s, color 0.3s;
-      margin-top: 30px;
-    }
-    .tech-link:hover {
-      background: white;
-      color: black;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maserati Quattroporte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+        }
+        .content img {
+            max-width: 50%;
+            height: auto;
+        }
+        .content .text {
+            max-width: 40%;
+            margin-left: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Maserati Quattroporte</h1>
-    <h2>Идеальное сочетание скорости, стиля и технологий</h2>
-    <ul>
-      <li>Высокая производительность</li>
-      <li>Роскошный дизайн</li>
-      <li>Передовые технологии</li>
-    </ul>
-    <!— Кнопка технической документации по центру —>
-    <a href="tech-docs.html" class="tech-link">Техническая документация</a>
-  </div>
+    <div class="header">
+        <h1>Maserati Quattroporte</h1>
+        <a href="tech.html" class="btn">Технические характеристики</a>
+    </div>
+    <div class="content">
+        <img src="quattroporte.jpg" alt="Maserati Quattroporte">
+        <div class="text">
+            <h2>Почему это хорошая машина?</h2>
+            <p>
+                Maserati Quattroporte – это воплощение итальянской роскоши и мощности. 
+                Этот премиальный седан сочетает в себе элегантный дизайн от Pininfarina, 
+                впечатляющую динамику и современные технологии.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
