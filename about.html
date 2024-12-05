@@ -37,11 +37,24 @@
         a:hover {
             background-color: #3b82f6;
         }
-        /* Стили для iframe */
-        iframe {
+        
+        /* Обертка для видео с соотношением сторон 16:9 */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Пропорция 16:9 */
+            height: 0;
+            overflow: hidden;
             margin-top: 30px;
-            max-width: 100%;
-            height: 315px;
+        }
+
+        /* Стили для iframe, чтобы он заполнил контейнер */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border: none;
         }
     </style>
@@ -57,8 +70,10 @@
         <p>Среди самых популярных моделей — Aventador, Huracán и Urus, которые воплощают дух скорости и роскоши.</p>
         <a href="index.html">На главную</a>
         
-        <!-- Встраивание видео с YouTube -->
-        <iframe src="https://www.youtube.com/embed/fdS1ZQ7WJMk" title="Lamborghini Video" allowfullscreen></iframe>
+        <!-- Обертка для видео -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/fdS1ZQ7WJMk" title="Lamborghini Video" allowfullscreen></iframe>
+        </div>
     </main>
 </body>
 </html>
