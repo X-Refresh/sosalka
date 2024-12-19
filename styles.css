@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* Заголовок */
+
 header {
     background-color: #1e3a8a;
     color: white;
@@ -23,7 +23,7 @@ header {
     margin: 0;
 }
 
-/* Навигация */
+
 nav {
     display: flex;
     justify-content: center;
@@ -49,14 +49,14 @@ nav a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Главная секция */
+
 .main {
     text-align: center;
     margin-top: 50px;
 }
 
 .main img {
-    width: 500px; /* Ограничиваем размер */
+    width: 500px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .main img:hover {
-    transform: scale(1.05); /* Легкий эффект увеличения */
+    transform: scale(1.05); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -76,7 +76,7 @@ nav a:hover {
     text-transform: capitalize;
 }
 
-/* Подвал */
+
 footer {
     background-color: #1e3a8a;
     color: white;
@@ -88,7 +88,7 @@ footer {
     width: 100%;
 }
 
-/* Класс для мобильных устройств */
+
 @media (max-width: 768px) {
     .header-title {
         font-size: 28px;
@@ -105,6 +105,6 @@ footer {
     }
 
     .main img {
-        width: 80%; /* Для мобильных устройств уменьшаем изображение */
+        width: 80%; 
     }
 }
